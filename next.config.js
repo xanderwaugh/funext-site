@@ -11,14 +11,14 @@ const withPlugins = require("next-compose-plugins");
 // ];
 
 const nextConfig = {
-    poweredByHeader: false,
-    reactStrictMode: true,
-    images: {
-        domains: ["avatars.githubusercontent.com"],
-    },
-    // async headers() {
-    //     [{ source: "/(.*)", headers: securityHeaders }];
-    // },
+  poweredByHeader: false,
+  reactStrictMode: true,
+  images: {
+    domains: ["avatars.githubusercontent.com"],
+  },
+  // async headers() {
+  //     [{ source: "/(.*)", headers: securityHeaders }];
+  // },
 };
 
 module.exports = withPlugins([], nextConfig);

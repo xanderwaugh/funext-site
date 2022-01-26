@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
 import { DefaultSeo } from "next-seo";
@@ -8,14 +8,14 @@ import { theme } from "../components/theme";
 import "../styles/global.css";
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-    return (
-        <ChakraProvider resetCSS theme={theme}>
-            <DefaultSeo {...SEOConfig} />
-            <Wrapper>
-                <Component {...pageProps} />
-            </Wrapper>
-        </ChakraProvider>
-    );
+  return (
+    <ChakraProvider resetCSS theme={theme}>
+      <DefaultSeo {...SEOConfig} />
+      <Wrapper>
+        <Component {...pageProps} />
+      </Wrapper>
+    </ChakraProvider>
+  );
 };
 
 export default MyApp;
