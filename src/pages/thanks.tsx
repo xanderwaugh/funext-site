@@ -46,8 +46,8 @@ const ThanksPage: React.FC = () => {
             w="full"
             rounded="lg"
             shadow="2xl"
-            src="https://kutty.netlify.app/hero.jpg"
-            alt="Hellonext feedback boards software screenshot"
+            src="/images/hxh.jpg"
+            alt="Funext Screenshot"
           />
         </Box>
       </Box>
