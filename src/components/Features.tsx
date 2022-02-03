@@ -20,11 +20,13 @@ const Features: React.FC = () => {
       maxW="5xl"
       mx="auto"
       py="12"
-      px={{ base: "6", md: "8" }}>
+      px={{ base: "6", md: "8" }}
+    >
       <SimpleGrid
         columns={{ base: 1, md: 2 }}
         spacingX="10"
-        spacingY={{ base: "8", md: "14" }}>
+        spacingY={{ base: "8", md: "14" }}
+      >
         <Feature title="Open Source" icon={<BsFileCode />}>
           The source code for this project is available on{" "}
           <Link href={github_url} color="blue.600" isExternal>
@@ -33,19 +35,27 @@ const Features: React.FC = () => {
         </Feature>
         <Feature title="User can Report Bugs " icon={<IoBugSharp />}>
           {"Report bugs in the menu, or click "}
-          <Link href={"/bug"} color="blue.600">
+          <Link
+            href={
+              "https://github.com/xanderwaugh/funimation-extended/issues"
+            }
+            isExternal
+            color="blue.600"
+          >
             here.
           </Link>
         </Feature>
         <Feature
           title="Developer doesn't care or want your data"
-          icon={<FcPrivacy />}>
+          icon={<FcPrivacy />}
+        >
           {"This extension was made to increase the useability of "}
           {"funimations video player, that's it."}
         </Feature>
         <Feature
           title="Support for multiple browsers"
-          icon={<FiChrome />}>
+          icon={<FiChrome />}
+        >
           {"This is actually cap, but support "}
           {"for firefox is coming soon."}
         </Feature>
@@ -67,7 +77,8 @@ const Feature = (props: FeatureProps) => {
   return (
     <Stack
       spacing={{ base: "3", md: "6" }}
-      direction={{ base: "column", md: "row" }}>
+      direction={{ base: "column", md: "row" }}
+    >
       <Box fontSize="6xl">{icon}</Box>
       <Stack spacing="1">
         <Text fontWeight="extrabold" fontSize="lg">
