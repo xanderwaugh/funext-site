@@ -1,6 +1,7 @@
 import { NextSeoProps } from "next-seo/lib/types";
 
-const keywords = "";
+const keywords =
+  "funimation, funimation extended, funimation extension, funex, funimation, anime, auto skip intro, skip intro";
 
 export const SEOConfig: NextSeoProps = {
   defaultTitle: "Funimation Extended",
@@ -50,10 +51,6 @@ export const SEOConfig: NextSeoProps = {
   ],
 
   additionalLinkTags: [
-    {
-      rel: "manifest",
-      href: "/manifest.json",
-    },
     {
       rel: "icon",
       type: "image/svg+xml",
