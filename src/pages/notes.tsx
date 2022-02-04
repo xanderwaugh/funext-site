@@ -28,6 +28,12 @@ const NotesPage: React.FC = () => {
           date="Feb 1, 2022"
           info="Switched Bundling Packager - Minor Bug Fixes"
         />
+        {/* 2.5.6 */}
+        <PatchNote
+          version="2.5.6"
+          date="Feb 3, 2022"
+          info="Fixed Popup Styling, Fixed Outro Timer Logic"
+        />
       </VStack>
     </VStack>
   );
